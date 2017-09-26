@@ -1,10 +1,9 @@
 def prime?(num)# Add  code here!
-  if num <= 1
-    return false
-  else
+  return false if num <= 1
+  
     for n in 2..(num - 1)
       return false if num % n == 0
     end
-  end
+  
   true
 end
